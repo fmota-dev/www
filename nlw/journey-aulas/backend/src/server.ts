@@ -4,13 +4,13 @@ import {
 	serializerCompiler,
 	validatorCompiler,
 } from "fastify-type-provider-zod"
-import { createTrip } from "./routes/create-trip"
-import { confirmTrip } from "./routes/confirm-trip"
-import { confirmParticipant } from "./routes/confirm-participant"
-import { createActivity } from "./routes/create-activity"
-import { getActivities } from "./routes/get-activities"
-import { createLink } from "./routes/create-link"
-import { getLinks } from "./routes/get-links"
+import { createTrip } from "./routes/trips/create-trip"
+import { confirmTrip } from "./routes/trips/confirm-trip"
+import { confirmParticipant } from "./routes/participants/confirm-participant"
+import { createActivity } from "./routes/activities/create-activity"
+import { getActivities } from "./routes/activities/get-activities"
+import { createLink } from "./routes/links/create-link"
+import { getLinks } from "./routes/links/get-links"
 
 const app = fastify()
 
