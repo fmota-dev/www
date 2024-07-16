@@ -1,9 +1,9 @@
 import { Container } from "./styles";
 import propTypes from "prop-types";
 
-export function ButtonText({ title, ...rest }) {
+export function ButtonText({ title, isActive = false, ...rest }) {
   return (
-    <Container type="button" {...rest}>
+    <Container type="button" {...rest} $isActive={isActive}>
       {title}
     </Container>
   );
@@ -11,4 +11,5 @@ export function ButtonText({ title, ...rest }) {
 
 ButtonText.propTypes = {
   title: propTypes.string.isRequired,
+  isActive: propTypes.bool,
 };
