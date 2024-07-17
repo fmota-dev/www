@@ -1,8 +1,32 @@
-# React + Vite
+# Rocket Notes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![preview](./.github/preview.gif)
 
-Currently, two official plugins are available:
+> Trilha Explorer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Projeto desenvolvido durante o curso Explorer da Rocketseat, ao final do módulo de Front-End, utilizando React e Vite.
+
+### Funções
+
+- Criar conta
+- Editar senha do perfil
+- Criar notas com marcadores, links úteis, título e observações.
+
+[Clique aqui para acessar](Em breve!)
+
+## Tecnologias
+
+- HTML
+- JavaScript (ES6 Modules)
+- React
+- CSS-in-JS
+- Vite
+- Styled Components
+- React Router
+- Git e GitHub
+- Netlify
+
+## Contatos
+
+- E-mail: fmota.web@gmail.com
+- LinkedIn: https://www.linkedin.com/in/fmota-dev/

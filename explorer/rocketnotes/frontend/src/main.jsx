@@ -1,16 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { ThemeProvider } from "styled-components";
-import { Details } from "./pages/Details";
-import { GlobalStyle } from "./styles/global";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { ThemeProvider } from 'styled-components'
+import GlobalStyles from './styles/global'
+import theme from './styles/theme'
 
-import theme from "./styles/theme";
+import { Routes } from './routes' 
+/*usar chaves para criar um import NOMEADO e deixar o código padronizado*/
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Details />
+      <GlobalStyles/>
+      <Routes />
     </ThemeProvider>
   </React.StrictMode>
-);
+)

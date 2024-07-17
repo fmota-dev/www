@@ -1,16 +1,10 @@
-import { Container } from "./styles";
-import propTypes from "prop-types";
+import { Container } from './styles'
 
-export function Section({title, children}) {
-    return (
-        <Container>
-            <h2>{title}</h2>
-            {children}
-        </Container>
-    );
+export function Section ({ title, children }) {
+  return (
+    <Container>
+      <h2>{title}</h2>
+      {children} 
+    </Container>
+  )
 }
-
-Section.propTypes = {
-    title: propTypes.string.isRequired,
-    children: propTypes.node.isRequired
-} 

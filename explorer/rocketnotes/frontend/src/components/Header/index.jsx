@@ -1,21 +1,23 @@
-import { IoExitOutline } from "react-icons/io5";
-import { Container, Profile, Logout } from "./styles";
+import { RiShutDownLine } from 'react-icons/ri'
+import { Container, Profile, Logout } from './styles'
 
 export function Header() {
   return (
     <Container>
-      <Profile>
-        <img src="https://github.com/fmota-dev.png" alt="Foto de perfil" />
+      <Profile to="/profile">
+        <img 
+        src="https://github.com/fmota-dev.png" 
+        alt="Foto de usuário" />
 
         <div>
-          <span>Bem-vindo!</span>
+          <span>Bem-vindo,</span>
           <strong>Filipe Mota</strong>
         </div>
       </Profile>
 
       <Logout>
-        <IoExitOutline size={24} />
+        <RiShutDownLine/>
       </Logout>
     </Container>
-  );
+  )
 }

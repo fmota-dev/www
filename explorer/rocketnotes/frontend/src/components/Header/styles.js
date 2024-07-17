@@ -1,52 +1,55 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom"
 
 export const Container = styled.header`
-  grid-area: header;
+  grid-area: header; //estratégia de grid para o header não se mexer ao rolar a tela
 
   height: 105px;
   width: 100%;
 
-  border-bottom: 1px solid ${({ theme }) => theme.colors.background_700};
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
 
   display: flex;
   justify-content: space-between;
 
   padding: 0 80px;
-`;
-
-export const Profile = styled.div`
+`
+export const Profile = styled(Link)`
   display: flex;
   align-items: center;
 
-  > img {
-    width: 66px;
-    height: 66px;
+  > img {/*o sinal de maior que é para garantir que será estilizada 
+  a imagem de profile e não uma outra imagem */
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
   }
-
   > div {
     display: flex;
     flex-direction: column;
     margin-left: 16px;
     line-height: 24px;
 
-    span {
+    span { /*aqui dentro conseguimos fazer uma castata e acessar os outros elementos*/
       font-size: 14px;
-      color: ${({ theme }) => theme.colors.gray_100};
+      color: ${({ theme }) => theme.COLORS.GRAY_100};
     }
 
-    strong {
+    strong { 
       font-size: 18px;
-      color: ${({ theme }) => theme.colors.white};
+      color: ${({ theme }) => theme.COLORS.WHITE};
     }
   }
-`;
+`
 
 export const Logout = styled.button`
-    border: none;
-    background: none;
+  border: none;
+  background: none;
 
-    > svg {
-        color: ${({ theme }) => theme.colors.white};
-    }
+  > svg {
+    color: ${({ theme }) => theme.COLORS.GRAY_100};
+    font-size: 36px;
+  }
 `
