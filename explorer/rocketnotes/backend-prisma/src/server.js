@@ -3,9 +3,11 @@ const express = require("express");
 const routes = require("./routes");
 const { connectarDB } = require("./config/db");
 const uploadConfig = require("./config/upload");
+const cors = require("cors");
 
 const app = express();
 const PORT = 3333;
+app.use(cors());
 
 connectarDB();
 
